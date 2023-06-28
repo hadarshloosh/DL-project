@@ -1,4 +1,4 @@
-# DL-project
+# ASL- image to letter
 Hadas Manor and Hadar Shloosh's project in DL course
 
 ![image](https://github.com/hadarshloosh/DL-project/assets/129359070/2e1143c7-155d-48c5-a128-043f96c00641) ![image](https://github.com/hadarshloosh/DL-project/assets/129359070/18798ee0-b5a5-455c-a1d9-358defed4d01) **Hadas**
