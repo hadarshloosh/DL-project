@@ -16,6 +16,7 @@ after that, we tried to add different augmentation.
 
 **The dataset:**
 Our data set include 122714 RGB images, which include five different people hands representation of ASL.
+![image](https://github.com/hadarshloosh/DL-project/assets/129359070/7855e318-58b9-4fcb-8fee-29e8add0c723)
 
 **results**
 
