@@ -52,9 +52,9 @@ if you want to use and improve our model here some ideas
 
 
 **References:**
-We took our dataset from:
+We took our dataset from: https://www.kaggle.com/datasets/mrgeislinger/asl-rgb-depth-fingerspelling-spelling-it-out?resource=download
 The pretrain model we took from VGG19:
-The keras code we took from: 
+The keras model we took from: https://www.kaggle.com/code/brussell757/american-sign-language-classification
 We also use many of the code and data that in the course material 
 
 
