@@ -17,7 +17,8 @@ after that, we tried to add different augmentation.
 **pre train model VGG19**
 
 In our code we used VGG19 which is a pre- trained CNN that include 19 layers. The model were trained with more than a million images from the ImageNet database and can classify images into 1000 object categories
-![image](https://github.com/hadarshloosh/DL-project/assets/129359070/b9921441-e938-47f7-8db7-98fa6fa4810a)
+![image](https://github.com/hadarshloosh/DL-project/assets/129359070/bbb9dc64-8e9f-43cd-9439-5cbf737ff61c)
+
 
 **The dataset:**
 Our data set include 122714 RGB images, which include five different people hands representation of ASL.
