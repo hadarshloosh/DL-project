@@ -52,7 +52,9 @@ if you want to use and improve our model here some ideas
 
 
 **References:**
+
 We took our dataset from:
+
 https://www.kaggle.com/datasets/mrgeislinger/asl-rgb-depth-fingerspelling-spelling-it-out?resource=download
 
 The pretrain model we took from VGG19:
