@@ -23,8 +23,9 @@ In our code we used VGG19 which is a pre- trained CNN that include 19 layers. Th
 **The dataset:**
 Our data set include 122714 RGB images, which include five different people hands representation of ASL.
 ![image](https://github.com/hadarshloosh/DL-project/assets/129359070/7855e318-58b9-4fcb-8fee-29e8add0c723)
-
 source: https://www.researchgate.net/figure/Illustration-of-fine-tuned-VGG19-pre-trained-CNN-model_fig1_342815128
+
+
 **results**
 
 model train accuracy:
