@@ -25,7 +25,6 @@ Our data set include 122714 RGB images, which include five different people hand
 ![image](https://github.com/hadarshloosh/DL-project/assets/129359070/7855e318-58b9-4fcb-8fee-29e8add0c723)
 
 
-
 **results**
 
 model train accuracy:
@@ -33,12 +32,10 @@ model test accuracy:
 model test accuuracy after adding gaussian noise:
 model test accuuracy after adding augmantation:
 
-
-
 **Usage**
 1.	Download asl dataset and put in /datasets/asl
-2.	Run our code in any pyton support machine.
-3.	Add your hand images at ______
+2.	Run our code in any pyton support machine. (make sure you write the right adrees to you drive)
+3.	Add your hand images to the drive and copy his path to the code
 4.	Try to see if the model can translate your name.
 5.	See the accuracy at the result.
 
@@ -49,7 +46,7 @@ if you want to use and improve our model here some ideas
 2. using this model as a part of a larges net which also include translation into a different language (for example it can be use in order to let people that speaks different language to be able to communicate).
 3. use this model in order to translate words and sentences.
 4. build a model that can "translate" from video (clip the video into picture and the use our model/ use yolo, ect..)
-
+5. you can use this model to use it in different image prossesing and labeling as you wish. (remeber to change the num class, the data+label) 
 
 **References:**
 
