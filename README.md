@@ -3,7 +3,7 @@ Hadas Manor and Hadar Shloosh's project in DL course
 
 ![image](https://github.com/hadarshloosh/DL-project/assets/129359070/2e1143c7-155d-48c5-a128-043f96c00641) ![image](https://github.com/hadarshloosh/DL-project/assets/129359070/18798ee0-b5a5-455c-a1d9-358defed4d01) **Hadas**
   
-**introduction**
+# introduction
 
 In our project, we decided to "translate" sign language (asl- American sign language) from images to letters.
 During our work, we used many of the course material such as image processing, using a pre- trained network (VGG19, that was train on ImageNet), resizing, augmentation, adding noise, etc.…
@@ -14,33 +14,51 @@ after training the model we wanted do make it robuster, improve the model result
 first we tried to add gaussian noise and reach the attached accuracy 
 after that, we tried to add different augmentation.
 
-**pre train model VGG19**
+# pre train model VGG19
 
 In our code we used VGG19 which is a pre- trained CNN that include 19 layers. The model were trained with more than a million images from the ImageNet database and can classify images into 1000 object categories
 ![image](https://github.com/hadarshloosh/DL-project/assets/129359070/bbb9dc64-8e9f-43cd-9439-5cbf737ff61c)
 source: https://www.researchgate.net/figure/Illustration-of-fine-tuned-VGG19-pre-trained-CNN-model_fig1_342815128
 
-**The dataset:**
-Our data set include 61,547![image](https://github.com/hadarshloosh/DL-project/assets/129359070/50c1d31f-dc66-4c98-a457-dffdbc075ecd)
- RGB images, which include five different people hands representation of ASL.
+# The dataset:
+Our data set include 61,547 RGB images, which include five different people hands representation of ASL.
 ![image](https://github.com/hadarshloosh/DL-project/assets/129359070/7855e318-58b9-4fcb-8fee-29e8add0c723)
 
 
-**results**
+# results
 
-model train accuracy:
-model test accuracy:
-model test accuuracy after adding gaussian noise:
-model test accuuracy after adding augmantation:
+![image](https://github.com/hadarshloosh/DL-project/assets/129359070/aad74286-740a-4d6e-98ef-fa4457833c01)
 
-**Usage**
+![image](https://github.com/hadarshloosh/DL-project/assets/129359070/9e6f650a-30d8-4253-b9e1-074b8beec268)
+
+**model train accuracy: 86.307%**
+
+**model test accuracy: 83.9908%**
+
+**model test accuuracy after adding **gaussian noise**: 80.532**
+
+![image](https://github.com/hadarshloosh/DL-project/assets/129359070/f4583817-f1af-44ae-9db0-f4a21fd5ab7f)
+
+**model test accuuracy after adding **augmantation**:**
+
+After few different combination, we understood that the best one is to use only the colorjitter (which make sence since randomaffine applies a combination of affine transformations to an image, including rotation, translation, shearing, and scaling. And Random perspective augmentation applies a projective transformation to an image, distorting its perspective by warping the image pixels. which is important in our data.
+
+here is an example for one runing wirh all 3 augmantations:
+
+![image](https://github.com/hadarshloosh/DL-project/assets/129359070/6545abb4-e3d2-4dfa-b974-a9b536b5980e)
+
+
+
+
+# Usage
 1.	Download asl dataset and put in /datasets/asl
 2.	Run our code in any pyton support machine. (make sure you write the right adrees to you drive)
 3.	Add your hand images to the drive and copy his path to the code
 4.	Try to see if the model can translate your name.
 5.	See the accuracy at the result.
 
-**Future work**
+# Future work
+
 if you want to use and improve our model here some ideas
 
 1. Improve the test accuracy by changing some of the hyper parameters and more augmentation.
@@ -49,7 +67,7 @@ if you want to use and improve our model here some ideas
 4. build a model that can "translate" from video (clip the video into picture and the use our model/ use yolo, ect..)
 5. you can use this model to use it in different image prossesing and labeling as you wish. (remeber to change the num class, the data+label) 
 
-**References:**
+# References:
 
 We took our dataset from:
 
