@@ -5,6 +5,8 @@ Hadas Manor and Hadar Shloosh's project in DL course
   
 # introduction
 
+According to the National Institute on Deafness and Other Communication Disorders (NIDCD), approximately 15% of American adults aged 18 and over report some trouble hearing.
+
 In our project, we decided to "translate" sign language (asl- American sign language) from images to letters.
 During our work, we used many of the course material such as image processing, using a pre- trained network (VGG19, that was train on ImageNet), resizing, augmentation, adding noise, etc.…
 With the help of a model that we found in GitHub (which were written in Keras), we wrote our code and build our model.
@@ -27,6 +29,12 @@ Our data set include 61,547 RGB images, which include five different people hand
 
 # results
 
+We tried to train out data with different hyper parameters in order to get to the best accuracy on the test set
+(We also tried different hyper parameter such as adding schedular (multi step learning rate) and changing the epoch number, or the batch size, but the result weren’t as good as our final submission.
+
+For example, here we have reached 77.193% validation accuracy )
+
+
 ![image](https://github.com/hadarshloosh/DL-project/assets/129359070/aad74286-740a-4d6e-98ef-fa4457833c01)
 
 ![image](https://github.com/hadarshloosh/DL-project/assets/129359070/9e6f650a-30d8-4253-b9e1-074b8beec268)
@@ -35,18 +43,29 @@ Our data set include 61,547 RGB images, which include five different people hand
 
 **model test accuracy: 83.9908%**
 
+We got those results with the following hyper parameters (in addition to the ones that we train our model with):
+5 epocs, batch size: 128, optimizer: Adam. Learning rate 1⋅𝑒^(−3)
+
 **model test accuuracy after adding **gaussian noise**: 80.532**
 
 ![image](https://github.com/hadarshloosh/DL-project/assets/129359070/f4583817-f1af-44ae-9db0-f4a21fd5ab7f)
 
-**model test accuuracy after adding **augmantation**:**
+**model test accuuracy after adding **augmantation**: 80.904599%**
 
 After few different combination, we understood that the best one is to use only the colorjitter (which make sence since randomaffine applies a combination of affine transformations to an image, including rotation, translation, shearing, and scaling. And Random perspective augmentation applies a projective transformation to an image, distorting its perspective by warping the image pixels. which is important in our data.
 
-here is an example for one runing wirh all 3 augmantations:
+here is an example for one runing with all 3 augmantations:
 
 ![image](https://github.com/hadarshloosh/DL-project/assets/129359070/6545abb4-e3d2-4dfa-b974-a9b536b5980e)
 
+# Our hand images test-set
+After we trained our model to a “good enough” accuracy, we decided to try the model with our own images as a test set
+We picture 3 different people with different features (nail paint, hand size, jewelry act.)
+Because you can “speak” ASL with both you right and left hands, we also made one set with left hand
+In the result we can see that the result are not that good, we tried to see if its “almost” correct by seeing top 3 cases of the prediction and saw that its wasn’t the case.
+A good future work is to try to figure what our model was focused on while predicting the test set.
+
+![image](https://github.com/hadarshloosh/DL-project/assets/129359070/2c2e8a6a-96a6-41c7-bce4-68fbae6dfdf9)
 
 
 
