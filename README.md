@@ -41,7 +41,7 @@ For example, here we have reached 77.193% validation accuracy )
 
 **model train accuracy: 86.307%**
 
-**model test accuracy: 83.9908%**
+**model test accuracy: 84.88098%**
 
 We got those results with the following hyper parameters (in addition to the ones that we train our model with):
 5 epocs, batch size: 128, optimizer: Adam. Learning rate 1⋅𝑒^(−3)
