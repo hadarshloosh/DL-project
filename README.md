@@ -97,6 +97,7 @@ The pretrain model we took from VGG19: https://www.kaggle.com/code/brussell757/a
 The keras model we took from:
 https://www.kaggle.com/code/brussell757/american-sign-language-classification
 
+Link to our model : "https://drive.google.com/file/d/1Pkp5q2ji-ARcgkGxFlcMvIbT0nxzACyE/view?usp=sharing"
 We also use many of the code and data that in the course material 
 
 
